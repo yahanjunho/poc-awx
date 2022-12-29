@@ -4,9 +4,14 @@ metadata:
   name: awx-01
   namespace: awx
 spec:
-  replicas: 2
+  replicas: 1
   #service_type: nodeport
   #ingress_type: none
   service_type: LoadBalancer
   loadbalancer_protocol: http
   loadbalancer_port: 8080
+  ee_images:
+  - name: test-environment
+    image: 192.168.50.137:5003/ansible/awx-ee:latest
+  control_plane_ee_image: 192.168.50.137:5003/ansible/awx-ee:latest
+  task_privileged: true
