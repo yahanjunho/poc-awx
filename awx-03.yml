@@ -4,7 +4,7 @@ metadata:
   name: test-awx-replicas
   namespace: awx
 spec:
-  replicas: 3
+  replicas: 0
   #service_type: nodeport
   #ingress_type: none
   service_type: LoadBalancer

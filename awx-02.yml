@@ -4,7 +4,7 @@ metadata:
   name: awx-02
   namespace: awx
 spec:
-  replicas: 2
+  replicas: 0
   #service_type: nodeport
   #ingress_type: none
   service_type: LoadBalancer
